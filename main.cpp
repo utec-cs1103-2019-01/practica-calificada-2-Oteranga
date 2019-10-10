@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "heap.h"
+#include "archivo.h"
 using namespace std;
 
 int main()
@@ -21,7 +22,7 @@ int main()
     cin >> h;
     cout << "heap" << endl;
     cout << h;
-    insert(h, 100, 200);
+    h.insert(h, 100, 200);
     cout << "heap" << endl;
     cout << h;
     load_from("data.txt", h);
