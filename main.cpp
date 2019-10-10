@@ -1,11 +1,12 @@
 #include <iostream>
+
 #include "heap.h"
 using namespace std;
 
 int main()
 {
     heap<int> h;
-    load_from(string("data.txt"), h);
+    load_from("data.txt", h);
     cout << "heap" << endl;
     cout << h;
     h.insert(10);
@@ -24,5 +25,6 @@ int main()
     cout << "heap" << endl;
     cout << h;
     load_from("data.txt", h);
+    cout << h;
     return 0;
 }
